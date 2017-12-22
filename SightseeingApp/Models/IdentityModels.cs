@@ -29,7 +29,9 @@ namespace SightseeingApp.Models
 
         public DbSet<Category> Categories { get; set; }
 
-        public DbSet<UserData> UserData { get; set; }
+        public DbSet<TransportMode> TransportModes{ get; set; }
+
+        public DbSet<RandomSight> RandomSight { get; set; }
 
         public static ApplicationDbContext Create()
         {

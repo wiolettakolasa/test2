@@ -1,0 +1,23 @@
+﻿@model SightseeingApp.Models.UserData
+
+@{
+    ViewBag.Title = "ShowResult";
+}
+
+<h2>ShowResult</h2>
+
+<tr>
+    <td>
+        @Html.DisplayFor(model => model.Time)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.Cost)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.CategoryId)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.TrasportModeId)
+    </td>
+
+    </tr>

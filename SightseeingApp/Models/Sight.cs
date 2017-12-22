@@ -12,23 +12,30 @@ namespace SightseeingApp.Models
         public int Id { get; set; }
 
         [Required]
+        [Display(Name = "Nazwa")]
         public string Name { get; set; }
 
         [Required]
+        [Display(Name = "Adres")]
+        public string Address { get; set; }
+
+        [Required]
+        [Display(Name = "Koszt")]
         public double Cost { get; set; }
 
         [Required]
+        [Display(Name = "Czas")]
         public double Time { get; set; }
 
         [Required]
-        public double CoordinateX { get; set; }
+        public double Latitude { get; set; }
 
         [Required]
-        public double CoordinateY { get; set; }
-
+        public double Longtitude { get; set; }
 
         public Category Category { get; set; } //navigation property
 
+        [Display(Name = "Kategoria")]
         public byte CategoryId { get; set; }
 
         [Required]

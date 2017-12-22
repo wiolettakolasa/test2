@@ -1,14 +1,18 @@
 ﻿@model IEnumerable<SightseeingApp.Models.Sight>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Zabytki";
 }
 
 <h2>Index</h2>
 
+<div>
+    @Html.ActionLink("Dodaj", "NewSight")
+</div>
 
 <table class="table">
     <tr>
+
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
